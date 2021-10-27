@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragment.LuckySpin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:id="@+id/coinsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/ic_coins"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:textColor="#000"
+        android:layout_alignParentRight="true"
+        android:drawableRight="@drawable/ic_coins"/>
+
+        <com.metxdef.spinwheel.spin.WheelView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:BackgroundColor="#ff9800"
+        app:TextColor="#263238"
+        android:id="@+id/wheelView"
+        app:CenterImage="@drawable/wheel2"
+        app:CursorImage="@drawable/ic_cursor"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playBTN"
+        android:minWidth="180dp"
+        android:background="@drawable/btn"
+        android:backgroundTint="#FF5722"
+        android:textColor="#fff"
+        android:layout_above="@id/watchBTN"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:id="@+id/watchBTN"
+        android:minWidth="180dp"
+        android:background="@drawable/btn"
+        android:backgroundTint="#FF5722"
+        android:layout_marginBottom="12dp"
+        android:textColor="#fff"
+        android:text="Video İzle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>

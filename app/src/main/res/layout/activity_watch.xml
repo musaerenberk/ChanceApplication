@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WatchActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"/>
+
+    <TextView
+        android:id="@+id/coinsTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:text="$$$$"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/ic_coins"
+        android:drawablePadding="8dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentRight="true"
+        android:drawableRight="@drawable/ic_coins"/>
+
+    <TextView
+        android:layout_below="@+id/coinsTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Bedava coin kazanmak için reklam izleyin!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="22sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/watchBTN1"
+        android:text="Reklam İzle"
+        android:layout_margin="12dp"
+        android:background="@drawable/btn"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

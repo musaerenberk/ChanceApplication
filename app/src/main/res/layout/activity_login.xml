@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/headerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:textStyle="bold"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#fff"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_box"
+            android:elevation="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="E-Mail"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailET"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_box"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="textPassword"
+            android:elevation="2dp"
+            android:hint="Şifre"
+            android:id="@+id/passwordET"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/purple_500"
+        android:id="@+id/progressBar"
+        android:layout_above="@+id/loginBTN"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_margin="22sp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:background="@drawable/btn"
+        android:textColor="#fff"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@id/signUpTV"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/loginBTN"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#673AB7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Hesap Oluştur"
+        android:id="@+id/signUpTV"/>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".fragment.AmazonFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_margin="16dp"
+        android:id="@+id/coinsTV"
+        app:drawableRightCompat="@drawable/ic_coins"
+        app:drawableEndCompat="@drawable/ic_coins"
+        android:text="11111"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_centerInParent="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amazon 25$ Hediye Kartı"
+            android:id="@+id/amazon25"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amazon 50$ Hediye Kartı"
+            android:id="@+id/amazon50"/>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitBTN"
+        android:text="Para Çek"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="22dp"
+        android:minWidth="160dp"
+        android:background="@drawable/btn"
+        android:backgroundTint="#FFC107"/>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InviteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Davet &amp; Kazan"
+                android:layout_centerInParent="true"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/gift"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="32dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Spin Wheel"
+        android:background="@drawable/refer_bg"
+        android:padding="12dp"
+        android:minWidth="160dp"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:id="@+id/referCodeTV"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Davet Kodun:"
+        android:padding="12dp"
+        android:minWidth="160dp"
+        android:textColor="#CC9900"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:layout_margin="12dp"
+        android:layout_above="@id/referCodeTV"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="180dp"
+        android:text="Davet Kodu Gir"
+        android:id="@+id/redeemBTN"
+        android:layout_above="@id/shareBTN"
+        android:background="@drawable/btn"
+        android:backgroundTint="#FFEB3B"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="180dp"
+        android:text="Davet Kodunu Paylaş"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/shareBTN"
+        android:background="@drawable/btn"
+        android:backgroundTint="#FFEB3B"
+        android:layout_margin="26dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

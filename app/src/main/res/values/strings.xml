@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SpinWheel</string>
+
+    <string name="admob_app_id">ca-app-pub-7381958133881218~5124895054</string>
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_rewarded_id">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="fb_banner_id">126752612600122_126753112600072</string>
+    <string name="fb_interstitial_id">315669563166062_315669599832725</string>
+    <string name="fb_rewarded_id">851581462345096_851581985678377</string>
+
+</resources>

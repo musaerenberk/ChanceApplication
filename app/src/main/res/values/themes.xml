@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SpinWheel" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="AppTheme.Main" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#DF90F1</item>
+        <item name="colorPrimaryDark">#DB6BF4</item>
+        <item name="colorAccent">#FFC107</item>
+    </style>
+</resources>

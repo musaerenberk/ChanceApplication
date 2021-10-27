@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Ol"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="İsim"
+            android:inputType="text"
+            android:id="@+id/nameET"
+            android:background="@drawable/text_box"
+            android:elevation="2dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="E-Mail"
+            android:inputType="textEmailAddress"
+            android:id="@+id/mailET"
+            android:background="@drawable/text_box"
+            android:elevation="2dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:id="@+id/passwordET"
+            android:background="@drawable/text_box"
+            android:elevation="2dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Şifreni Onayla"
+            android:inputType="textPassword"
+            android:id="@+id/confirmPass"
+            android:background="@drawable/text_box"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_marginBottom="12dp"
+        android:indeterminateTint="@color/purple_500"
+        android:layout_above="@id/registerBTN" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerBTN"
+        android:layout_margin="32dp"
+        android:layout_centerHorizontal="true"
+        android:minWidth="160dp"
+        android:text="Kayıt Ol"
+        android:layout_above="@+id/loginTV"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/loginTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:text="Zaten hesabınız var mı? Giriş yapın."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#673AB7"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"/>
+
+
+</RelativeLayout>
